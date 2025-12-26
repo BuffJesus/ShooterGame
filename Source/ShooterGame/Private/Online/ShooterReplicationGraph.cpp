@@ -93,6 +93,7 @@
 #include "GameFramework/PlayerState.h"
 #include "GameFramework/Pawn.h"
 #include "Engine/LevelScriptActor.h"
+#include "Engine/NetConnection.h"
 #include "Player/ShooterCharacter.h"
 #include "Online/ShooterPlayerState.h"
 #include "Weapons/ShooterWeapon.h"
@@ -621,8 +622,8 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 			if (LastData == nullptr)
 			{
 				FShooterAlwaysRelevantActorInfo NewActorInfo;
-				// Construct the TWeakObjectPtr from the raw pointer
-				NewActorInfo.Connection = TWeakObjectPtr<UNetConnection>(CurViewer.Connection.Get());
+				// FIXED FOR UE 5.7: UNetConnection is no longer a UObject, use raw pointer
+				NewActorInfo.Connection = CurViewer.Connection.Get();
 				LastData = &(PastRelevantActors[PastRelevantActors.Add(NewActorInfo)]);
 			}
 
@@ -661,8 +662,9 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 		}
 	}
 
+	// FIXED FOR UE 5.7: Changed from IsValid() to nullptr check since Connection is now a raw pointer
 	PastRelevantActors.RemoveAll([&](FShooterAlwaysRelevantActorInfo& RelActorInfo) {
-		return !RelActorInfo.Connection.IsValid();
+		return RelActorInfo.Connection == nullptr || !RelActorInfo.Connection->IsValidLowLevel();
 	});
 
 	Params.OutGatheredReplicationLists.AddReplicationActorList(ReplicationActorList);
@@ -715,7 +717,6 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 		{
 			UE_LOG(LogShooterReplicationGraph, Warning, TEXT("UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorListsForConnection - empty RepList %s"), *Params.ConnectionManager.GetName());
 		}
-
 	}
 
 #if WITH_GAMEPLAY_DEBUGGER
