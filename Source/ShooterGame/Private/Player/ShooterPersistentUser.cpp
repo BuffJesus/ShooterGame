@@ -2,6 +2,8 @@
 
 #include "Player/ShooterPersistentUser.h"
 #include "ShooterGame.h"
+#include "GameFramework/PlayerInput.h"
+#include "Kismet/GameplayStatics.h"
 #include "Player/ShooterLocalPlayer.h"
 
 UShooterPersistentUser::UShooterPersistentUser(const FObjectInitializer& ObjectInitializer)

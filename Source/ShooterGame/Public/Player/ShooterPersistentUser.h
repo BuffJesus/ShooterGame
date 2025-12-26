@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+#include "GameFramework/SaveGame.h"
 #include "ShooterPersistentUser.generated.h"
 
 UCLASS()

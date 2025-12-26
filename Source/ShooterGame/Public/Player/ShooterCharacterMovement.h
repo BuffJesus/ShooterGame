@@ -5,6 +5,7 @@
  */
 
 #pragma once
+#include "GameFramework/CharacterMovementComponent.h"
 #include "ShooterCharacterMovement.generated.h"
 
 UCLASS()

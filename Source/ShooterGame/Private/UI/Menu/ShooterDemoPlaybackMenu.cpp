@@ -5,6 +5,8 @@
 #include "ShooterStyle.h"
 #include "ShooterMenuSoundsWidgetStyle.h"
 #include "ShooterGameInstance.h"
+#include "Engine/GameViewportClient.h"
+#include "Engine/LocalPlayer.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"
 

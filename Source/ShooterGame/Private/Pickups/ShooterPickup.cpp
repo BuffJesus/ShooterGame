@@ -2,6 +2,8 @@
 
 #include "Pickups/ShooterPickup.h"
 #include "ShooterGame.h"
+#include "Components/CapsuleComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
 
 AShooterPickup::AShooterPickup(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)

@@ -2,9 +2,11 @@
 
 #pragma once
 
-#include "Engine.h"
-#include "SlateBasics.h"
-#include "SlateExtras.h"
+// UE5 Fix: Updated includes for better compatibility
+#include "CoreMinimal.h"
+#include "Engine/Engine.h"
+#include "Widgets/SCompoundWidget.h"
+#include "Framework/Application/SlateApplication.h"
 #include "ParticleDefinitions.h"
 #include "SoundDefinitions.h"
 #include "Net/UnrealNetwork.h"
@@ -32,9 +34,10 @@ DECLARE_LOG_CATEGORY_EXTERN(LogShooterWeapon, Log, All);
 
 #ifndef SHOOTER_CONSOLE_UI
 /** Set to 1 to pretend we're building for console even on a PC, for testing purposes */
-	#define SHOOTER_SIMULATE_CONSOLE_UI 0
+#define SHOOTER_SIMULATE_CONSOLE_UI	0
 
-#if (defined(PLATFORM_PS5) && PLATFORM_PS5) || (defined(PLATFORM_XSX) && PLATFORM_XSX) || (defined(PLATFORM_SWITCH) && PLATFORM_SWITCH) || SHOOTER_SIMULATE_CONSOLE_UI
+// UE5 Fix: Use defined() for platform checks as macros may not exist
+#if (defined(PLATFORM_PS4) && PLATFORM_PS4) || (defined(PLATFORM_SWITCH) && PLATFORM_SWITCH) || SHOOTER_SIMULATE_CONSOLE_UI
 	#define SHOOTER_CONSOLE_UI 1
 #else
 	#define SHOOTER_CONSOLE_UI 0

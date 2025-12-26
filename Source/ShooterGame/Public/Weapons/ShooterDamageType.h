@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+#include "Engine/Canvas.h"
+#include "GameFramework/DamageType.h"
 
 #include "ShooterDamageType.generated.h"
 

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "ShooterTypes.h"
+#include "Engine/GameViewportClient.h"
 #include "ShooterGameViewportClient.generated.h"
 
 class SShooterConfirmationDialog;
@@ -53,9 +54,9 @@ class UShooterGameViewportClient : public UGameViewportClient
 public:
 
  	// start UGameViewportClient interface
- 	void NotifyPlayerAdded( int32 PlayerIndex, ULocalPlayer* AddedPlayer ) override;
-	void AddViewportWidgetContent( TSharedRef<class SWidget> ViewportContent, const int32 ZOrder = 0 ) override;
-	void RemoveViewportWidgetContent( TSharedRef<class SWidget> ViewportContent ) override;
+	virtual void NotifyPlayerAdded( int32 PlayerIndex, ULocalPlayer* AddedPlayer ) override;
+	virtual void AddViewportWidgetContent( TSharedRef<class SWidget> ViewportContent, const int32 ZOrder = 0 ) override;
+	virtual void RemoveViewportWidgetContent( TSharedRef<class SWidget> ViewportContent ) override;
 
 	void ShowDialog(TWeakObjectPtr<ULocalPlayer> PlayerOwner, EShooterDialogType::Type DialogType, const FText& Message, const FText& Confirm, const FText& Cancel, const FOnClicked& OnConfirm, const FOnClicked& OnCancel);
 	void HideDialog();

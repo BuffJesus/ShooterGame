@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Online/ShooterGameMode.h"
+
+#include "EngineUtils.h"
 #include "ShooterGame.h"
 #include "ShooterGameInstance.h"
 #include "UI/ShooterHUD.h"
@@ -10,6 +12,10 @@
 #include "Online/ShooterGameSession.h"
 #include "Bots/ShooterAIController.h"
 #include "ShooterTeamStart.h"
+#include "Components/CapsuleComponent.h"
+#include "Engine/PlayerStartPIE.h"
+#include "Kismet/GameplayStatics.h"
+#include "UObject/ConstructorHelpers.h"
 
 
 AShooterGameMode::AShooterGameMode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)

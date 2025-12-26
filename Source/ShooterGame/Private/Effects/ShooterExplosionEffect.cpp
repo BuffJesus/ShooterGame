@@ -2,6 +2,9 @@
 
 #include "Effects/ShooterExplosionEffect.h"
 #include "ShooterGame.h"
+#include "Components/PointLightComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Materials/Material.h"
 
 AShooterExplosionEffect::AShooterExplosionEffect(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

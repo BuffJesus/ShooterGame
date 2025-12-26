@@ -9,6 +9,7 @@
 #include "Player/ShooterPersistentUser.h"
 #include "Player/ShooterLocalPlayer.h"
 #include "OnlineSubsystemUtils.h"
+#include "GameFramework/PlayerState.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"
 

@@ -6,6 +6,8 @@
 #include "Online/ShooterPlayerState.h"
 #include "GameDelegates.h"
 #include "IPlatformFilePak.h"
+#include "Engine/GameEngine.h"
+#include "Engine/LocalPlayer.h"
 
 #include "UObject/PackageReload.h"
 

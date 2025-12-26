@@ -12,6 +12,8 @@
 #include "Misc/NetworkVersion.h"
 #include "OnlineSubsystemUtils.h"
 #include "ShooterGameUserSettings.h"
+#include "Engine/GameViewportClient.h"
+#include "Engine/Texture2D.h"
 #include "Performance/LatencyMarkerModule.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"

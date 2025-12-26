@@ -8,6 +8,7 @@
 #include "Online/ShooterOnlineGameSettings.h"
 #include "OnlineSubsystemSessionSettings.h"
 #include "OnlineSubsystemUtils.h"
+#include "Engine/LocalPlayer.h"
 #include "Online/OnlineSessionNames.h"
 
 void UShooterTestControllerBase::OnInit()

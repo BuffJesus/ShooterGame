@@ -2,8 +2,11 @@
 
 #include "Weapons/ShooterProjectile.h"
 #include "ShooterGame.h"
+#include "Components/SphereComponent.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "Effects/ShooterExplosionEffect.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AShooterProjectile::AShooterProjectile(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

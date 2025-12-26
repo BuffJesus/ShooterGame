@@ -2,6 +2,7 @@
 
 #include "Online/ShooterPlayerState.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
 #include "Net/OnlineEngineInterface.h"
 
 AShooterPlayerState::AShooterPlayerState(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)

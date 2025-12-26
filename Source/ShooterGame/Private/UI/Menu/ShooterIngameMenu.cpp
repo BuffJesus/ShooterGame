@@ -9,6 +9,8 @@
 #include "ShooterGameInstance.h"
 #include "UI/ShooterHUD.h"
 #include "OnlineSubsystemUtils.h"
+#include "Engine/GameViewportClient.h"
+#include "Engine/LocalPlayer.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"
 

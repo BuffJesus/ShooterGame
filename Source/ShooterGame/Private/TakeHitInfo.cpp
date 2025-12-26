@@ -2,6 +2,7 @@
 
 #include "ShooterGame.h"
 #include "ShooterTypes.h"
+#include "GameFramework/DamageType.h"
 #include "Player/ShooterCharacter.h"
 
 FTakeHitInfo::FTakeHitInfo()

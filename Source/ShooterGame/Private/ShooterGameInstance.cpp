@@ -6,7 +6,6 @@
 
 #include "ShooterGameInstance.h"
 #include "ShooterGame.h"
-#include "Net/Core/Connection/NetResult.h"
 #include "ShooterMainMenu.h"
 #include "ShooterWelcomeMenu.h"
 #include "ShooterMessageMenu.h"
@@ -21,14 +20,14 @@
 #include "Online/ShooterOnlineSessionClient.h"
 #include "OnlineSubsystemUtils.h"
 #include "ShooterGameUserSettings.h"
-
-// UE5: Define settings constants that were removed from the online subsystem
-#ifndef SETTING_GAMEMODE
-#define SETTING_GAMEMODE FName(TEXT("GAMEMODE"))
-#endif
-#ifndef SETTING_MAPNAME
-#define SETTING_MAPNAME FName(TEXT("MAPNAME"))
-#endif
+#include "UnrealEngine.h"
+#include "Containers/Ticker.h" // UE5 Fix: Include for FTSTicker
+#include "Engine/Canvas.h"
+#include "Engine/Level.h"
+#include "Engine/LocalPlayer.h"
+#include "Interfaces/OnlinePresenceInterface.h"
+#include "Kismet/GameplayStatics.h"
+#include "Online/OnlineSessionNames.h"
 
 #if !defined(CONTROLLER_SWAPPING)
 	#define CONTROLLER_SWAPPING 0
@@ -140,8 +139,7 @@ void UShooterGameInstance::Init()
 	FCoreDelegates::ApplicationHasEnteredForegroundDelegate.AddUObject(this, &UShooterGameInstance::HandleAppResume);
 
 	FCoreDelegates::OnSafeFrameChangedEvent.AddUObject(this, &UShooterGameInstance::HandleSafeFrameChanged);
-	// UE5: OnControllerConnectionChange was removed. Use IPlatformInputDeviceMapper instead if needed.
-	// FCoreDelegates::OnControllerConnectionChange.AddUObject(this, &UShooterGameInstance::HandleControllerConnectionChange);
+	FCoreDelegates::OnControllerConnectionChange.AddUObject(this, &UShooterGameInstance::HandleControllerConnectionChange);
 	FCoreDelegates::ApplicationLicenseChange.AddUObject(this, &UShooterGameInstance::HandleAppLicenseUpdate);
 
 	FCoreUObjectDelegates::PreLoadMap.AddUObject(this, &UShooterGameInstance::OnPreLoadMap);
@@ -161,8 +159,8 @@ void UShooterGameInstance::Init()
 	OnEndSessionCompleteDelegate = FOnEndSessionCompleteDelegate::CreateUObject(this, &UShooterGameInstance::OnEndSessionComplete);
 
 	// Register delegate for ticker callback
-	// UE5: FTSTicker is the new thread-safe ticker
-	TickDelegateHandle = FTSTicker::GetCoreTicker().AddTicker(FTickerDelegate::CreateUObject(this, &UShooterGameInstance::Tick));
+	TickDelegate = FTickerDelegate::CreateUObject(this, &UShooterGameInstance::Tick);
+	TickDelegateHandle = FTSTicker::GetCoreTicker().AddTicker(TickDelegate); // UE5 Fix: Use FTSTicker
 
 	// Register activities delegate callback
  	OnGameActivityActivationRequestedDelegate = FOnGameActivityActivationRequestedDelegate::CreateUObject(this, &UShooterGameInstance::OnGameActivityActivationRequestComplete);
@@ -193,11 +191,7 @@ void UShooterGameInstance::Shutdown()
 	}
 
 	// Unregister ticker delegate
-	// UE5: Use instance method RemoveTicker on GetCoreTicker()
-	if (TickDelegateHandle.IsValid())
-	{
-		FTSTicker::GetCoreTicker().RemoveTicker(TickDelegateHandle);
-	}
+	FTSTicker::GetCoreTicker().RemoveTicker(TickDelegateHandle); // UE5 Fix: Use FTSTicker
 }
 
 void UShooterGameInstance::HandleNetworkConnectionStatusChanged( const FString& ServiceName, EOnlineServerConnectionStatus::Type LastConnectionStatus, EOnlineServerConnectionStatus::Type ConnectionStatus )
@@ -218,7 +212,7 @@ void UShooterGameInstance::HandleNetworkConnectionStatusChanged( const FString& 
 		// Display message on consoles
 #if SHOOTER_XBOX_STRINGS
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection to Xbox LIVE has been lost." );
-#elif (defined(PLATFORM_PS4) && PLATFORM_PS4)
+#elif defined(PLATFORM_PS4) && PLATFORM_PS4
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection to \"PSN\" has been lost." );
 #else
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection has been lost." );
@@ -254,7 +248,7 @@ void UShooterGameInstance::HandleSessionFailure( const FUniqueNetId& NetId, ESes
 		// Display message on consoles
 #if SHOOTER_XBOX_STRINGS
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection to Xbox LIVE has been lost." );
-#elif (defined(PLATFORM_PS4) && PLATFORM_PS4)
+#elif defined(PLATFORM_PS4) && PLATFORM_PS4
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection to PSN has been lost." );
 #else
 		const FText ReturnReason	= NSLOCTEXT( "NetworkFailures", "ServiceUnavailable", "Connection has been lost." );
@@ -318,11 +312,10 @@ void UShooterGameInstance::OnPostDemoPlay()
 	GotoState( ShooterGameInstanceState::Playing );
 }
 
-void UShooterGameInstance::HandleDemoPlaybackFailure(const UE::Net::TNetResult<EReplayResult>& Result)
+// UE5: EDemoPlayFailure is deprecated in favor of EReplayResult, suppress warning for now
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void UShooterGameInstance::HandleDemoPlaybackFailure( EDemoPlayFailure::Type FailureType, const FString& ErrorString )
 {
-	// UE5: TNetResult - use ToString() from FNetResult base class
-	FString ErrorString = Result.ToString();
-	
 	if (GetWorld() != nullptr && GetWorld()->WorldType == EWorldType::PIE)
 	{
 		UE_LOG(LogEngine, Warning, TEXT("Demo failed to play back correctly, got error %s"), *ErrorString);
@@ -331,10 +324,12 @@ void UShooterGameInstance::HandleDemoPlaybackFailure(const UE::Net::TNetResult<E
 
 	ShowMessageThenGotoState(FText::Format(NSLOCTEXT("UShooterGameInstance", "DemoPlaybackFailedFmt", "Demo playback failed: {0}"), FText::FromString(ErrorString)), NSLOCTEXT("DialogButtons", "OKAY", "OK"), FText::GetEmpty(), ShooterGameInstanceState::MainMenu);
 }
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 void UShooterGameInstance::StartGameInstance()
 {
-#if !(defined(PLATFORM_PS4) && PLATFORM_PS4)
+// UE5 Fix: Use defined() check for platform macro
+#if !defined(PLATFORM_PS4) || PLATFORM_PS4 == 0
 	TCHAR Parm[4096] = TEXT("");
 
 	const TCHAR* Cmd = FCommandLine::Get();
@@ -736,9 +731,6 @@ void UShooterGameInstance::SetPresenceForLocalPlayers(const FString& StatusStr, 
 
 void UShooterGameInstance::SetPresenceForLocalPlayer(int32 LocalUserNum, const FString& StatusStr, const FVariantData& PresenceData)
 {
-	// UE5: FOnlineUserPresenceStatus and SetPresence API may have changed
-	// TODO: Update to new presence API if needed
-#if 0
 	const IOnlinePresencePtr Presence = Online::GetPresenceInterface(GetWorld());
 	if (Presence.IsValid())
 	{
@@ -754,7 +746,6 @@ void UShooterGameInstance::SetPresenceForLocalPlayer(int32 LocalUserNum, const F
 			Presence->SetPresence(*UserId, PresenceStatus);
 		}
 	}
-#endif
 }
 
 void UShooterGameInstance::BeginMainMenuState()
@@ -1357,7 +1348,7 @@ bool UShooterGameInstance::Tick(float DeltaSeconds)
 						LocalPlayers[i],
 						EShooterDialogType::ControllerDisconnected,
 						FText::Format(NSLOCTEXT("ProfileMessages", "PlayerReconnectControllerFmt", "Player {0}, please reconnect your controller."), FText::AsNumber(i + 1)),
-#if (defined(PLATFORM_PS4) && PLATFORM_PS4)
+#if defined(PLATFORM_PS4) && PLATFORM_PS4
 						NSLOCTEXT("DialogButtons", "PS4_CrossButtonContinue", "Cross Button - Continue"),
 #elif SHOOTER_XBOX_STRINGS
 						NSLOCTEXT("DialogButtons", "AButtonContinue", "A - Continue"),
@@ -1466,7 +1457,7 @@ void UShooterGameInstance::HandleSignInChangeMessaging()
 void UShooterGameInstance::HandleUserLoginChanged(int32 GameUserIndex, ELoginStatus::Type PreviousLoginStatus, ELoginStatus::Type LoginStatus, const FUniqueNetId& UserId)
 {
 	// On Switch, accounts can play in LAN games whether they are signed in online or not. 
-#if PLATFORM_SWITCH
+#if defined(PLATFORM_SWITCH) && PLATFORM_SWITCH
 	const bool bDowngraded = LoginStatus == ELoginStatus::NotLoggedIn || (GetOnlineMode() == EOnlineMode::Online && LoginStatus == ELoginStatus::UsingLocalProfile);
 #else
 	const bool bDowngraded = (LoginStatus == ELoginStatus::NotLoggedIn && GetOnlineMode() == EOnlineMode::Offline) || (LoginStatus != ELoginStatus::LoggedIn && GetOnlineMode() != EOnlineMode::Offline);
@@ -1962,10 +1953,8 @@ void UShooterGameInstance::StartOnlinePrivilegeTask(const IOnlineIdentity::FOnGe
 	}
 	else
 	{
-		// UE5: FUniqueNetIdString() default constructor removed
-		// Create an empty string-based unique net ID
-		FUniqueNetIdPtr EmptyId = FUniqueNetIdString::Create(TEXT(""), NAME_None);
-		Delegate.ExecuteIfBound(*EmptyId, Privilege, (uint32)IOnlineIdentity::EPrivilegeResults::NoFailures);
+		// Can only get away with faking the UniqueNetId here because the delegates don't use it
+		Delegate.ExecuteIfBound(FUniqueNetIdString(), Privilege, (uint32)IOnlineIdentity::EPrivilegeResults::NoFailures);
 	}
 }
 

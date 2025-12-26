@@ -9,7 +9,7 @@
 #include "Interfaces/OnlineGameActivityInterface.h"
 #include "Engine/GameInstance.h"
 #include "Engine/NetworkDelegates.h"
-#include "Net/Core/Connection/NetResult.h"
+#include "Containers/Ticker.h" // UE5 Fix: Include for FTSTicker
 #include "ShooterGameInstance.generated.h"
 
 class FVariantData;
@@ -260,7 +260,7 @@ private:
 	FTickerDelegate TickDelegate;
 
 	/** Handle to various registered delegates */
-	FTSTicker::FDelegateHandle TickDelegateHandle;
+	FTSTicker::FDelegateHandle TickDelegateHandle; // UE5 Fix: Use FTSTicker::FDelegateHandle
 	FDelegateHandle TravelLocalSessionFailureDelegateHandle;
 	FDelegateHandle OnJoinSessionCompleteDelegateHandle;
 	FDelegateHandle OnSearchSessionsCompleteDelegateHandle;
@@ -286,8 +286,10 @@ private:
 	void OnPostLoadMap(UWorld*);
 	void OnPostDemoPlay();
 
-	// UE5: Signature changed - now takes TNetResult instead of separate parameters
-	virtual void HandleDemoPlaybackFailure(const UE::Net::TNetResult<EReplayResult>& Result) override;
+	// UE5: EDemoPlayFailure is deprecated in favor of EReplayResult, suppress warning for now
+	PRAGMA_DISABLE_DEPRECATION_WARNINGS
+	virtual void HandleDemoPlaybackFailure( EDemoPlayFailure::Type FailureType, const FString& ErrorString ) override;
+	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 	/** Delegate function executed after checking privileges for starting quick match */
 	void OnUserCanPlayInvite(const FUniqueNetId& UserId, EUserPrivileges::Type Privilege, uint32 PrivilegeResults);

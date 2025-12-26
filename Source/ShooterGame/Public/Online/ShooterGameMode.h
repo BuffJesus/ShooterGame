@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "GameFramework/GameMode.h"
+#include "GameFramework/PlayerStart.h"
 #include "Interfaces/OnlineIdentityInterface.h"
 #include "Player/ShooterPlayerController.h"
 #include "ShooterGameMode.generated.h"

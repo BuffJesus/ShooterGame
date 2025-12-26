@@ -2,6 +2,9 @@
 
 #include "Effects/ShooterImpactEffect.h"
 #include "ShooterGame.h"
+#include "Kismet/GameplayStatics.h"
+#include "Materials/Material.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
 
 AShooterImpactEffect::AShooterImpactEffect(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

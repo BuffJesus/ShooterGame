@@ -3,6 +3,7 @@
 
 #include "Player/ShooterSpectatorPawn.h"
 #include "ShooterGame.h"
+#include "Components/InputComponent.h"
 
 AShooterSpectatorPawn::AShooterSpectatorPawn(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)

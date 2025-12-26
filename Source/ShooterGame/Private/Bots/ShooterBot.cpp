@@ -8,6 +8,9 @@ AShooterBot::AShooterBot(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 	AIControllerClass = AShooterAIController::StaticClass();
+	
+	// UE5 Fix: Explicitly set AutoPossessAI for spawned bots
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
 	UpdatePawnMeshes();
 

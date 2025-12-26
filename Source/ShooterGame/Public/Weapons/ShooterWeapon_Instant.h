@@ -3,6 +3,7 @@
 #pragma once
 
 #include "ShooterWeapon.h"
+#include "GameFramework/DamageType.h"
 #include "ShooterWeapon_Instant.generated.h"
 
 class AShooterImpactEffect;

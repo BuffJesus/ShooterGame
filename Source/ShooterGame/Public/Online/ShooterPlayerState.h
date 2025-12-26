@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+#include "GameFramework/PlayerState.h"
 
 #include "ShooterPlayerState.generated.h"
 

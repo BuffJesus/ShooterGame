@@ -7,6 +7,7 @@
 #include "ShooterEngine.h"
 #include "ShooterGame.h"
 #include "ShooterGameInstance.h"
+#include "Engine/NetDriver.h"
 
 UShooterEngine::UShooterEngine(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)

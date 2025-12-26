@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "GameFramework/GameState.h"
 #include "Online/ShooterOnlineGameMatches.h"
 #include "ShooterGameState.generated.h"
 

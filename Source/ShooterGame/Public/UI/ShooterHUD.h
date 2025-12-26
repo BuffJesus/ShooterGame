@@ -3,6 +3,8 @@
 #pragma once
 
 #include "ShooterTypes.h"
+#include "Engine/Canvas.h"
+#include "GameFramework/HUD.h"
 #include "ShooterHUD.generated.h"
 
 struct FHitData

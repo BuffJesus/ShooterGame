@@ -2,9 +2,13 @@
 
 #include "Player/ShooterDemoSpectator.h"
 #include "ShooterGame.h"
+#include "Components/InputComponent.h"
 #include "UI/Menu/ShooterDemoPlaybackMenu.h"
 #include "UI/Widgets/SShooterDemoHUD.h"
 #include "Engine/DemoNetDriver.h"
+#include "Engine/GameViewportClient.h"
+#include "Engine/LocalPlayer.h"
+#include "GameFramework/WorldSettings.h"
 
 AShooterDemoSpectator::AShooterDemoSpectator(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

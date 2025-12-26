@@ -4,6 +4,7 @@
 #include "ShooterGame.h"
 #include "Engine/DemoNetDriver.h"
 #include "ShooterStyle.h"
+#include "GameFramework/WorldSettings.h"
 #include "Styling/CoreStyle.h"
 
 /** Widget to represent the main replay timeline bar */

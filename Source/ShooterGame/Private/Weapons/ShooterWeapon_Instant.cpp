@@ -4,6 +4,7 @@
 #include "ShooterGame.h"
 #include "Particles/ParticleSystemComponent.h"
 #include "Effects/ShooterImpactEffect.h"
+#include "Kismet/GameplayStatics.h"
 
 AShooterWeapon_Instant::AShooterWeapon_Instant(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

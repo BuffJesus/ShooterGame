@@ -6,6 +6,8 @@
 #include "ShooterStyle.h"
 #include "ShooterOptionsWidgetStyle.h"
 #include "ShooterGameUserSettings.h"
+#include "UnrealEngine.h"
+#include "Kismet/GameplayStatics.h"
 #include "Player/ShooterPersistentUser.h"
 #include "Player/ShooterLocalPlayer.h"
 #include "Performance/LatencyMarkerModule.h"

@@ -22,6 +22,9 @@
 #include "Sound/SoundNodeLocalPlayer.h"
 #include "AudioThread.h"
 #include "OnlineSubsystemUtils.h"
+#include "Components/InputComponent.h"
+#include "Engine/Level.h"
+#include "GameFramework/PlayerInput.h"
 
 #define  ACH_FRAG_SOMEONE	TEXT("ACH_FRAG_SOMEONE")
 #define  ACH_SOME_KILLS		TEXT("ACH_SOME_KILLS")

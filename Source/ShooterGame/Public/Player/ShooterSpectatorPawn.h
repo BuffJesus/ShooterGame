@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+#include "GameFramework/SpectatorPawn.h"
 #include "ShooterSpectatorPawn.generated.h"
 
 

@@ -4,6 +4,7 @@
 
 #include "Online.h"
 #include "ShooterLeaderboards.h"
+#include "GameFramework/GameSession.h"
 #include "ShooterGameSession.generated.h"
 
 struct FShooterGameSessionParams

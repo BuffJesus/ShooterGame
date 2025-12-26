@@ -8,6 +8,8 @@
 #include "Online/ShooterPlayerState.h"
 #include "UI/ShooterHUD.h"
 #include "Camera/CameraShakeBase.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AShooterWeapon::AShooterWeapon(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {

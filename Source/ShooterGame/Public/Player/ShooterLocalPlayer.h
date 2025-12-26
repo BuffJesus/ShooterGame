@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Engine/LocalPlayer.h"
 #include "Player/ShooterPersistentUser.h"
 #include "ShooterLocalPlayer.generated.h"
 
@@ -14,7 +15,7 @@ public:
 
 	virtual void SetControllerId(int32 NewControllerId) override;
 
-	virtual FString GetNickname() const;
+	virtual FString GetNickname() const override;
 
 	class UShooterPersistentUser* GetPersistentUser() const;
 	
