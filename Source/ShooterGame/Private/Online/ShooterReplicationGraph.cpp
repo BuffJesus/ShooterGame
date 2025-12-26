@@ -616,13 +616,13 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 				}
 			}
 
-			FShooterAlwaysRelevantActorInfo* LastData = PastRelevantActors.FindByKey<UNetConnection*>(CurViewer.Connection);
+			FShooterAlwaysRelevantActorInfo* LastData = PastRelevantActors.FindByKey<UNetConnection*>(CurViewer.Connection.Get());
 
-			// We've not seen this actor before, go ahead and add them.
 			if (LastData == nullptr)
 			{
 				FShooterAlwaysRelevantActorInfo NewActorInfo;
-				NewActorInfo.Connection = CurViewer.Connection;
+				// Construct the TWeakObjectPtr from the raw pointer
+				NewActorInfo.Connection = TWeakObjectPtr<UNetConnection>(CurViewer.Connection.Get());
 				LastData = &(PastRelevantActors[PastRelevantActors.Add(NewActorInfo)]);
 			}
 

@@ -139,7 +139,7 @@ void UShooterGameInstance::Init()
 	FCoreDelegates::ApplicationHasEnteredForegroundDelegate.AddUObject(this, &UShooterGameInstance::HandleAppResume);
 
 	FCoreDelegates::OnSafeFrameChangedEvent.AddUObject(this, &UShooterGameInstance::HandleSafeFrameChanged);
-	FCoreDelegates::OnControllerConnectionChange.AddUObject(this, &UShooterGameInstance::HandleControllerConnectionChange);
+	// FCoreDelegates::OnControllerConnectionChange_Handle = FCoreDelegates::OnControllerConnectionChange.AddUObject(this, &UShooterGameInstance::HandleControllerConnectionChange);
 	FCoreDelegates::ApplicationLicenseChange.AddUObject(this, &UShooterGameInstance::HandleAppLicenseUpdate);
 
 	FCoreUObjectDelegates::PreLoadMap.AddUObject(this, &UShooterGameInstance::OnPreLoadMap);
@@ -1954,7 +1954,8 @@ void UShooterGameInstance::StartOnlinePrivilegeTask(const IOnlineIdentity::FOnGe
 	else
 	{
 		// Can only get away with faking the UniqueNetId here because the delegates don't use it
-		Delegate.ExecuteIfBound(FUniqueNetIdString(), Privilege, (uint32)IOnlineIdentity::EPrivilegeResults::NoFailures);
+		TSharedRef<const FUniqueNetIdString> EmptyId = FUniqueNetIdString::Create(TEXT(""), TEXT(""));
+		Delegate.ExecuteIfBound(*EmptyId, Privilege, (uint32)IOnlineIdentity::EPrivilegeResults::NoFailures);
 	}
 }
 
