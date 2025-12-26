@@ -36,6 +36,7 @@ AShooterGameMode::AShooterGameMode(const FObjectInitializer& ObjectInitializer) 
 	MinRespawnDelay = 5.0f;
 
 	bAllowBots = true;	
+	MaxBots = 1;
 	bNeedsBotCreation = true;
 	bUseSeamlessTravel = FParse::Param(FCommandLine::Get(), TEXT("NoSeamlessTravel")) ? false : true;
 }
