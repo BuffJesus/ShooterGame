@@ -7,7 +7,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="" />
+    <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController_Menu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController_Menu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterSpectatorPawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterSpectatorPawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Sound/SoundNodeLocalPlayer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Sound/SoundNodeLocalPlayer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterDemoPlaybackMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterDemoPlaybackMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterFriends.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterFriends.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterIngameMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterIngameMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMainMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMainMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMessageMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMessageMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterOptions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterOptions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterRecentlyMet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterRecentlyMet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterWelcomeMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterWelcomeMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterDemoList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterDemoList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterLeaderboard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterLeaderboard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterMenuItem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterMenuItem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterMenuWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterMenuWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterOnlineStore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterOnlineStore.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterServerList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterServerList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterHUDPCTrackerBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterHUDPCTrackerBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterUIHelpers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/ShooterUIHelpers.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterChatWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterChatWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuItemWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuItemWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuSoundsWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuSoundsWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterMenuWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterOptionsWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterOptionsWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterScoreboardWidgetStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterScoreboardWidgetStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SChatWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SChatWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterConfirmationDialog.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterConfirmationDialog.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterDemoHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterDemoHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterScoreboardWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterScoreboardWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterSplitScreenLobbyWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterSplitScreenLobbyWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterDamageType.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterDamageType.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon_Instant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon_Instant.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon_Projectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Weapons/ShooterWeapon_Projectile.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +63,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "BuffJesus"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/BuffJesus/ShooterGame.git",
@@ -261,7 +307,7 @@
       <option name="presentableId" value="Default" />
       <updated>1766767210531</updated>
       <workItem from="1766767217385" duration="58000" />
-      <workItem from="1766767786922" duration="10439000" />
+      <workItem from="1766767786922" duration="11793000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -271,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766782189190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update `.idea` workspace settings&#10;&#10;- Configured Git settings and integration with GitHub.&#10;- Enabled metadata file check-ins and unsaved scene checks.&#10;- Added placeholders for local tasks and commit messages.">
+      <option name="closed" value="true" />
+      <created>1766782320661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766782320661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -279,7 +333,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases." />
+    <MESSAGE value="Update `.idea` workspace settings&#10;&#10;- Configured Git settings and integration with GitHub.&#10;- Enabled metadata file check-ins and unsaved scene checks.&#10;- Added placeholders for local tasks and commit messages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update `.idea` workspace settings&#10;&#10;- Configured Git settings and integration with GitHub.&#10;- Enabled metadata file check-ins and unsaved scene checks.&#10;- Added placeholders for local tasks and commit messages." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
