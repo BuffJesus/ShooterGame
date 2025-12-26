@@ -339,7 +339,8 @@ void UShooterGameInstance::StartGameInstance()
 	{
 		// if we're 'overriding' with the default map anyway, don't set a bogus 'playing' state.
 		const FString ShortMapName = FPackageName::GetShortName(Parm);
-		if (!MainMenuMap.Contains(ShortMapName))
+		const FString ShortMainMenuMapName = FPackageName::GetShortName(MainMenuMap);
+		if (ShortMapName != ShortMainMenuMapName)
 		{
 			FURL DefaultURL;
 			DefaultURL.LoadURLConfig(TEXT("DefaultPlayer"), GGameIni);

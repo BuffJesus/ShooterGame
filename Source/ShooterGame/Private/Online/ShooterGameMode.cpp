@@ -56,7 +56,7 @@ FString AShooterGameMode::GetBotsCountOptionName()
 
 void AShooterGameMode::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
-	const int32 BotsCountOptionValue = UGameplayStatics::GetIntOption(Options, GetBotsCountOptionName(), 0);
+	const int32 BotsCountOptionValue = UGameplayStatics::GetIntOption(Options, GetBotsCountOptionName(), MaxBots);
 	SetAllowBots(BotsCountOptionValue > 0 ? true : false, BotsCountOptionValue);	
 	Super::InitGame(MapName, Options, ErrorMessage);
 
@@ -140,7 +140,7 @@ void AShooterGameMode::HandleMatchIsWaitingToStart()
 {
 	Super::HandleMatchIsWaitingToStart();
 
-	if (bNeedsBotCreation)
+	if (bNeedsBotCreation && bAllowBots)
 	{
 		CreateBotControllers();
 		bNeedsBotCreation = false;
@@ -167,7 +167,6 @@ void AShooterGameMode::HandleMatchIsWaitingToStart()
 
 void AShooterGameMode::HandleMatchHasStarted()
 {
-	bNeedsBotCreation = true;
 	Super::HandleMatchHasStarted();
 
 	AShooterGameState* const MyGameState = Cast<AShooterGameState>(GameState);
@@ -472,9 +471,9 @@ bool AShooterGameMode::IsSpawnpointPreferred(APlayerStart* SpawnPoint, AControll
 		const FVector SpawnLocation = SpawnPoint->GetActorLocation();
 		for (ACharacter* OtherPawn : TActorRange<ACharacter>(GetWorld()))
 		{
-			if (OtherPawn != MyPawn)
+			if (OtherPawn != Player->GetPawn())
 			{
-				const float CombinedHeight = (MyPawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight() + OtherPawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight()) * 2.0f;
+				const float CombinedHeight = (MyPawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight() + OtherPawn->GetCapsuleComponent()->GetScaledCapsuleHalfHeight());
 				const float CombinedRadius = MyPawn->GetCapsuleComponent()->GetScaledCapsuleRadius() + OtherPawn->GetCapsuleComponent()->GetScaledCapsuleRadius();
 				const FVector OtherLocation = OtherPawn->GetActorLocation();
 
