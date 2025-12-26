@@ -20,6 +20,15 @@
     <option name="cachedIndexableFilesCount" value="371" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BuffJesus/ShooterGame.git",
+    "accountId": "b25a41c0-1c86-44eb-9c47-b9d67b9708c4"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShooterGame/ShooterGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
@@ -70,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Source/Runtime/SlateCore/Public/Styling/CoreStyle.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Source/Runtime/SlateCore/Public/Styling/SlateWidgetStyleContainerBase.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -85,6 +95,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "Uproject.ShooterGame.executor": "Debug",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "settings.editor.selected.configurable": "UnrealLinkOptionsId"
   }
@@ -250,13 +261,25 @@
       <option name="presentableId" value="Default" />
       <updated>1766767210531</updated>
       <workItem from="1766767217385" duration="58000" />
-      <workItem from="1766767786922" duration="10289000" />
+      <workItem from="1766767786922" duration="10439000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
+      <option name="closed" value="true" />
+      <created>1766782189190</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766782189190</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
