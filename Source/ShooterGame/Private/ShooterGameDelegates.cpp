@@ -20,9 +20,9 @@ struct FShooterGameGlobalDelegateInit
 	{
 		FPakPlatformFile::FPakSigningFailureHandlerData& HandlerData = FPakPlatformFile::GetPakSigningFailureHandlerData();
 		{
-			FScopeLock Lock(&HandlerData.Lock);
-			HandlerData.ChunkSignatureCheckFailedDelegate.AddStatic(FShooterGameGlobalDelegateInit::HandlePakChunkSignatureCheckFailed);
-			HandlerData.MasterSignatureTableCheckFailedDelegate.AddStatic(FShooterGameGlobalDelegateInit::HandlePakMasterSignatureTableCheckFailure);
+			FScopeLock Lock(&HandlerData.GetLock());
+			HandlerData.GetPakChunkSignatureCheckFailedDelegate().AddStatic(FShooterGameGlobalDelegateInit::HandlePakChunkSignatureCheckFailed);
+			HandlerData.GetPrincipalSignatureTableCheckFailedDelegate().AddStatic(FShooterGameGlobalDelegateInit::HandlePakMasterSignatureTableCheckFailure);
 		}
 
 		FPakPlatformFile::GetPakSetIndexSettingsDelegate().BindStatic(GetPakSetIndexSettings);

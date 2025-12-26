@@ -412,8 +412,12 @@ void AShooterPlayerController::ServerCheat_Implementation(const FString& Msg)
 
 void AShooterPlayerController::SimulateInputKey(FKey Key, bool bPressed)
 {
-	// UE5: InputKey now takes FInputKeyParams
-	FInputKeyParams Params(Key, bPressed ? IE_Pressed : IE_Released, 1.0, false, false);
+	ULocalPlayer* LP = GetLocalPlayer();
+	FViewport* Viewport = (LP && LP->ViewportClient) ? LP->ViewportClient->Viewport : nullptr;
+
+	FInputDeviceId DeviceId = FInputDeviceId::CreateFromInternalId(LP ? LP->GetControllerId() : 0);
+	FInputKeyEventArgs Params(Viewport, DeviceId, Key, bPressed ? IE_Pressed : IE_Released, 0.0f, false, FPlatformTime::Cycles64());
+
 	InputKey(Params);
 }
 
