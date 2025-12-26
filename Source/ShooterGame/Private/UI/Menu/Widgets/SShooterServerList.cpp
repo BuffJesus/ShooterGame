@@ -2,6 +2,8 @@
 
 #include "SShooterServerList.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
+#include "Engine/GameViewportClient.h"
 #include "Widgets/Views/SHeaderRow.h"
 #include "ShooterStyle.h"
 #include "ShooterGameLoadingScreen.h"
@@ -48,7 +50,6 @@ void SShooterServerList::Construct(const FArguments& InArgs)
 			.HeightOverride(300)
 			[
 				SAssignNew(ServerListWidget, SListView<TSharedPtr<FServerEntry>>)
-				.ItemHeight(20)
 				.ListItemsSource(&ServerList)
 				.SelectionMode(ESelectionMode::Single)
 				.OnGenerateRow(this, &SShooterServerList::MakeListViewWidget)
@@ -350,7 +351,7 @@ FReply SShooterServerList::OnKeyDown(const FGeometry& MyGeometry, const FKeyEven
 		MoveSelection(1);
 		Result = FReply::Handled();
 	}
-	else if (Key == EKeys::Enter || Key == EKeys::Gamepad_FaceButton_Bottom)
+	else if (Key == EKeys::Enter || Key == EKeys::Virtual_Gamepad_Accept.GetVirtualKey())
 	{
 		ConnectToServer();
 		Result = FReply::Handled();

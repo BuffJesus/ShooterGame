@@ -294,8 +294,8 @@ void UShooterTestControllerBase::StartQuickMatch()
 	}
 
 	QuickMatchSearchSettings = MakeShareable(new FShooterOnlineSearchSettings(false, true));
-	QuickMatchSearchSettings->QuerySettings.Set(SEARCH_XBOX_LIVE_HOPPER_NAME, FString("FreeForAll"), EOnlineComparisonOp::Equals);
-	QuickMatchSearchSettings->QuerySettings.Set(SEARCH_XBOX_LIVE_SESSION_TEMPLATE_NAME, FString("MatchSession"), EOnlineComparisonOp::Equals);
+	QuickMatchSearchSettings->QuerySettings.Set(SETTING_MATCHING_HOPPER, FString("FreeForAll"), EOnlineComparisonOp::Equals);
+	QuickMatchSearchSettings->QuerySettings.Set(SETTING_SESSION_TEMPLATE_NAME, FString("MatchSession"), EOnlineComparisonOp::Equals);
 	QuickMatchSearchSettings->TimeoutInSeconds = 120.0f;
 
 	FShooterOnlineSessionSettings SessionSettings(false, true, 8);

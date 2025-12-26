@@ -8,9 +8,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPlayerController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterGameDelegates.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterGameDelegates.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Tests/ShooterTestControllerBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Tests/ShooterTestControllerBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterDemoList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterDemoList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterLeaderboard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterLeaderboard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterOnlineStore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterOnlineStore.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterServerList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/Widgets/SShooterServerList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterStyle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Style/ShooterStyle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterScoreboardWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Widgets/SShooterScoreboardWidget.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,7 +440,7 @@
       <workItem from="1766767217385" duration="58000" />
       <workItem from="1766767786922" duration="11819000" />
       <workItem from="1766783984220" duration="5795000" />
-      <workItem from="1766790050121" duration="731000" />
+      <workItem from="1766790050121" duration="1476000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -486,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766788869602</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactor delegate usage and input handling for UE5.7 compatibility&#10;&#10;- Updated `FPakPlatformFile` delegates to use accessor methods and renamed delegates for clarity.&#10;- Adjusted `SimulateInputKey` to use `FInputKeyEventArgs` with updated input device parameters.&#10;- Made minor adjustments to `.idea` workspace metadata.">
+      <option name="closed" value="true" />
+      <created>1766790812198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766790812198</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -499,7 +511,8 @@
     <MESSAGE value="Update includes and fix compatibility issues for UE5 migration&#10;&#10;- Replaced deprecated headers and APIs with UE5-compliant alternatives.&#10;- Added missing includes across multiple files to resolve build errors.&#10;- Adjusted header ordering for consistency and clarity." />
     <MESSAGE value="Refactor replication graph and game instance code for clarity and compliance  &#10;&#10;- Updated use of `TWeakObjectPtr` and `TSharedRef` for safer pointer handling.  &#10;- Commented out unused controller connection delegate in `ShooterGameInstance.cpp`.  &#10;- Cleaned up `.idea` workspace metadata." />
     <MESSAGE value="Update replication graph for UE 5.7 compatibility&#10;&#10;- Replaced `TWeakObjectPtr&lt;UNetConnection&gt;` with raw pointer due to `UNetConnection` no longer being a UObject.&#10;- Adjusted null and validity checks for raw pointers.&#10;- Enhanced player state frequency limiter and logging methods for replication nodes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update replication graph for UE 5.7 compatibility&#10;&#10;- Replaced `TWeakObjectPtr&lt;UNetConnection&gt;` with raw pointer due to `UNetConnection` no longer being a UObject.&#10;- Adjusted null and validity checks for raw pointers.&#10;- Enhanced player state frequency limiter and logging methods for replication nodes." />
+    <MESSAGE value="Refactor delegate usage and input handling for UE5.7 compatibility&#10;&#10;- Updated `FPakPlatformFile` delegates to use accessor methods and renamed delegates for clarity.&#10;- Adjusted `SimulateInputKey` to use `FInputKeyEventArgs` with updated input device parameters.&#10;- Made minor adjustments to `.idea` workspace metadata." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor delegate usage and input handling for UE5.7 compatibility&#10;&#10;- Updated `FPakPlatformFile` delegates to use accessor methods and renamed delegates for clarity.&#10;- Adjusted `SimulateInputKey` to use `FInputKeyEventArgs` with updated input device parameters.&#10;- Made minor adjustments to `.idea` workspace metadata." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

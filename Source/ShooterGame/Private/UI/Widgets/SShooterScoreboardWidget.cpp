@@ -2,6 +2,7 @@
 
 #include "SShooterScoreboardWidget.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
 #include "ShooterStyle.h"
 #include "ShooterScoreboardWidgetStyle.h"
 #include "ShooterUIHelpers.h"
@@ -355,7 +356,7 @@ FReply SShooterScoreboardWidget::OnKeyDown(const FGeometry& MyGeometry, const FK
 			OnSelectedPlayerNext();
 			Result = FReply::Handled();
 		}
-		else if (Key == EKeys::Enter || Key == EKeys::Virtual_Accept)
+		else if (Key == EKeys::Enter || Key == EKeys::Virtual_Gamepad_Accept.GetVirtualKey())
 		{
 			ProfileUIOpened();
 			Result = FReply::Handled();

@@ -2,6 +2,7 @@
 
 #include "SShooterOnlineStore.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
 #include "Widgets/Views/SHeaderRow.h"
 #include "ShooterStyle.h"
 #include "ShooterGameLoadingScreen.h"
@@ -34,7 +35,6 @@ void SShooterOnlineStore::Construct(const FArguments& InArgs)
 			.HeightOverride(250)
 			[
 				SAssignNew(OfferListWidget, SListView<TSharedPtr<FStoreEntry>>)
-				.ItemHeight(20)
 				.ListItemsSource(&OfferList)
 				.SelectionMode(ESelectionMode::Single)
 				.OnGenerateRow(this, &SShooterOnlineStore::MakeListViewWidget)
@@ -386,7 +386,7 @@ FReply SShooterOnlineStore::OnKeyDown(const FGeometry& MyGeometry, const FKeyEve
 		MoveSelection(1);
 		Result = FReply::Handled();
 	}
-	else if (Key == EKeys::Enter || Key == EKeys::Virtual_Accept)
+	else if (Key == EKeys::Enter || Key == EKeys::Virtual_Gamepad_Accept.GetVirtualKey())
 	{
 		PurchaseOffer();
 		Result = FReply::Handled();

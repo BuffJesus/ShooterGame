@@ -2,6 +2,7 @@
 
 #include "SShooterLeaderboard.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
 #include "ShooterStyle.h"
 #include "ShooterUIHelpers.h"
 #include "OnlineSubsystemUtils.h"
@@ -45,7 +46,6 @@ void SShooterLeaderboard::Construct(const FArguments& InArgs)
 			.HeightOverride(600)
 			[
 				SAssignNew(RowListWidget, SListView< TSharedPtr<FLeaderboardRow> >)
-				.ItemHeight(20)
 				.ListItemsSource(&StatRows)
 				.SelectionMode(ESelectionMode::Single)
 				.OnGenerateRow(this, &SShooterLeaderboard::MakeListViewWidget)
@@ -235,7 +235,7 @@ FReply SShooterLeaderboard::OnKeyDown(const FGeometry& MyGeometry, const FKeyEve
 		MoveSelection(1);
 		Result = FReply::Handled();
 	}
-	else if (Key == EKeys::Escape || Key == EKeys::Virtual_Back || Key == EKeys::Gamepad_Special_Left)
+	else if (Key == EKeys::Escape || Key == EKeys::Virtual_Gamepad_Back.GetVirtualKey() || Key == EKeys::Gamepad_Special_Left)
 	{
 		if (bReadingStats)
 		{
@@ -243,7 +243,7 @@ FReply SShooterLeaderboard::OnKeyDown(const FGeometry& MyGeometry, const FKeyEve
 			bReadingStats = false;
 		}
 	}
-	else if (Key == EKeys::Enter || Key == EKeys::Virtual_Accept)
+	else if (Key == EKeys::Enter || Key == EKeys::Virtual_Gamepad_Accept.GetVirtualKey())
 	{
 		// Open the profile UI of the selected item
 		ProfileUIOpened();

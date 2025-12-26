@@ -2,6 +2,7 @@
 
 #include "SShooterDemoList.h"
 #include "ShooterGame.h"
+#include "Engine/LocalPlayer.h"
 #include "Widgets/Views/SHeaderRow.h"
 #include "ShooterStyle.h"
 #include "Styling/CoreStyle.h"
@@ -61,7 +62,6 @@ void SShooterDemoList::Construct(const FArguments& InArgs)
 			.HeightOverride(300)
 			[
 				SAssignNew(DemoListWidget, SListView<TSharedPtr<FDemoEntry>>)
-				.ItemHeight(20)
 				.ListItemsSource(&DemoList)
 				.SelectionMode(ESelectionMode::Single)
 				.OnGenerateRow(this, &SShooterDemoList::MakeListViewWidget)
@@ -124,7 +124,7 @@ void SShooterDemoList::OnEnumerateStreamsComplete(const FEnumerateStreamsResult&
 		}
 	};
 
-	Sort( DemoList.GetData(), DemoList.Num(), FCompareDateTime() );
+	Algo::Sort( DemoList, FCompareDateTime() );
 
 	//StatusText = "";
 	StatusText = LOCTEXT("DemoSelectionInfo","Press ENTER to Play. Press DEL to delete.");
@@ -349,7 +349,7 @@ FReply SShooterDemoList::OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent&
 
 	FReply Result = FReply::Unhandled();
 	const FKey Key = InKeyboardEvent.GetKey();
-	if (Key == EKeys::Enter || Key == EKeys::Virtual_Accept)
+	if (Key == EKeys::Enter || Key == EKeys::Virtual_Gamepad_Accept.GetVirtualKey())
 	{
 		PlayDemo();
 		Result = FReply::Handled();

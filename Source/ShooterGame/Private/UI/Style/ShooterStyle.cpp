@@ -3,6 +3,7 @@
 #include "ShooterStyle.h"
 #include "ShooterGame.h"
 #include "Slate/SlateGameResources.h"
+#include "Fonts/CompositeFont.h"
 
 TSharedPtr< FSlateStyleSet > FShooterStyle::ShooterStyleInstance = NULL;
 
@@ -31,10 +32,9 @@ FName FShooterStyle::GetStyleSetName()
 #define IMAGE_BRUSH( RelativePath, ... ) FSlateImageBrush( FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".png"), __VA_ARGS__ )
 #define BOX_BRUSH( RelativePath, ... ) FSlateBoxBrush( FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".png"), __VA_ARGS__ )
 #define BORDER_BRUSH( RelativePath, ... ) FSlateBorderBrush( FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".png"), __VA_ARGS__ )
-#define TTF_FONT( RelativePath, ... ) FSlateFontInfo( FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".ttf"), __VA_ARGS__ )
-#define OTF_FONT( RelativePath, ... ) FSlateFontInfo( FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".otf"), __VA_ARGS__ )
+#define TTF_FONT( RelativePath, ... ) FSlateFontInfo( MakeShared<FStandaloneCompositeFont>(*FPaths::GetCleanFilename(RelativePath), FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".ttf"), EFontHinting::Default, EFontLoadingPolicy::LazyLoad), __VA_ARGS__ )
+#define OTF_FONT( RelativePath, ... ) FSlateFontInfo( MakeShared<FStandaloneCompositeFont>(*FPaths::GetCleanFilename(RelativePath), FPaths::ProjectContentDir() / "Slate"/ RelativePath + TEXT(".otf"), EFontHinting::Default, EFontLoadingPolicy::LazyLoad), __VA_ARGS__ )
 
-PRAGMA_DISABLE_OPTIMIZATION
 TSharedRef< FSlateStyleSet > FShooterStyle::Create()
 {
 	TSharedRef<FSlateStyleSet> StyleRef = FSlateGameResources::New(FShooterStyle::GetStyleSetName(), "/Game/UI/Styles", "/Game/UI/Styles");
@@ -137,7 +137,6 @@ TSharedRef< FSlateStyleSet > FShooterStyle::Create()
 
 	return StyleRef;
 }
-PRAGMA_ENABLE_OPTIMIZATION
 
 #undef IMAGE_BRUSH
 #undef BOX_BRUSH
