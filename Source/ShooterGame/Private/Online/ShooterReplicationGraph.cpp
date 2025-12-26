@@ -91,6 +91,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "GameFramework/GameState.h"
 #include "GameFramework/PlayerState.h"
+#include "GameFramework/PlayerController.h"
 #include "GameFramework/Pawn.h"
 #include "Engine/LevelScriptActor.h"
 #include "Engine/NetConnection.h"
@@ -197,6 +198,7 @@ void UShooterReplicationGraph::InitGlobalActorClassSettings()
 	AddInfo( AReplicationGraphDebugActor::StaticClass(),			EClassRepNodeMapping::NotRouted);				// Not needed. Replicated special case inside RepGraph
 	AddInfo( AInfo::StaticClass(),									EClassRepNodeMapping::RelevantAllConnections);	// Non spatialized, relevant to all
 	AddInfo( AShooterPickup::StaticClass(),							EClassRepNodeMapping::Spatialize_Static);		// Spatialized and never moves. Routes to GridNode.
+	AddInfo( ANoPawnPlayerController::StaticClass(),				EClassRepNodeMapping::NotRouted);				// UE 5.7+: Not needed in graph.
 
 #if WITH_GAMEPLAY_DEBUGGER
 	AddInfo( AGameplayDebuggerCategoryReplicator::StaticClass(),	EClassRepNodeMapping::NotRouted);				// Replicated via UShooterReplicationGraphNode_AlwaysRelevant_ForConnection

@@ -338,7 +338,8 @@ void UShooterGameInstance::StartGameInstance()
 	if (FParse::Token(Cmd, Parm, UE_ARRAY_COUNT(Parm), 0) && Parm[0] != '-')
 	{
 		// if we're 'overriding' with the default map anyway, don't set a bogus 'playing' state.
-		if (!MainMenuMap.Contains(Parm))
+		const FString ShortMapName = FPackageName::GetShortName(Parm);
+		if (!MainMenuMap.Contains(ShortMapName))
 		{
 			FURL DefaultURL;
 			DefaultURL.LoadURLConfig(TEXT("DefaultPlayer"), GGameIni);
