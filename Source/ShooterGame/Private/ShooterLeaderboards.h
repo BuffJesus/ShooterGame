@@ -24,7 +24,7 @@ public:
 		SortedColumn = LEADERBOARD_STAT_SCORE;
 
 		// Define default columns
-		new (ColumnMetadata) FColumnMetaData(LEADERBOARD_STAT_SCORE, EOnlineKeyValuePairDataType::Int32);
+		ColumnMetadata.Add(FColumnMetaData(LEADERBOARD_STAT_SCORE, EOnlineKeyValuePairDataType::Int32));
 	}
 };
 
@@ -38,7 +38,7 @@ public:
 	FShooterAllTimeMatchResultsWrite()
 	{
 		// Default properties
-		new (LeaderboardNames) FName(TEXT("ShooterAllTimeMatchResults"));
+		LeaderboardNames.Add(TEXT("ShooterAllTimeMatchResults"));
 		RatedStat = LEADERBOARD_STAT_SCORE;
 		DisplayFormat = ELeaderboardFormat::Number;
 		SortMethod = ELeaderboardSort::Descending;
