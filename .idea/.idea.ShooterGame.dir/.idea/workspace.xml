@@ -9,7 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Lights.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Lights.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://2" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://3" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShooterGame/ShooterGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Private/sqlite/sqlite3.inl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Source/Developer/ShaderCompilerCommon/Private/ISAParser/RDNA_Common.h" root0="FORCE_HIGHLIGHTING" />
@@ -124,10 +125,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1769032817506" />
-    <option name="spentUsd" value="0.031323798" />
+    <option name="spentUsd" value="0.045699798" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="5" />
+    <option name="suspendCountdown" value="4" />
   </component>
   <component name="RunManager">
     <configuration name="ShooterGame" type="Uproject" factoryName="rider.uproject">
@@ -445,7 +446,7 @@
       <workItem from="1766783984220" duration="5795000" />
       <workItem from="1766790050121" duration="5795000" />
       <workItem from="1766798240984" duration="132000" />
-      <workItem from="1766803858369" duration="3319000" />
+      <workItem from="1766803858369" duration="4309000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -575,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766808646787</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update README.md for comprehensive UE5.7 project details&#10;&#10;- Added detailed porting notes, feature highlights, and build instructions for ShooterGame's transition to UE5.7.&#10;- Documented new Lumen, Nanite, TSR, and VSM rendering technologies.&#10;- Included performance tuning options, known issues, and contribution guidelines.&#10;- Updated `.idea` and `Config/DefaultEditor.ini` for editor profile improvements.">
+      <option name="closed" value="true" />
+      <created>1766809449180</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1766809449180</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -598,7 +607,8 @@
     <MESSAGE value="Update replication graph for improved UE5.7 compatibility&#10;&#10;- Refined handling of `AlwaysRelevantStreamingLevelActors` with added null checks for safer operations.&#10;- Replaced raw pointer use with `TWeakObjectPtr` for `UNetConnection` in `FShooterAlwaysRelevantActorInfo`.&#10;- Enhanced player state initialization logic for replication nodes.&#10;- Removed outdated UE5.7-specific comments and fixed metadata inconsistencies." />
     <MESSAGE value="Remove deprecated automation scripts, build configurations, and related files for ShooterGame" />
     <MESSAGE value="Remove platform-specific subsystems and deprecated configurations  &#10;&#10;- Removed `OnlineSubsystemPS4` and `OnlineSubsystemLive` due to deprecation.  &#10;- Cleaned up unused target platforms in `ShooterGame.uproject`.  &#10;- Updated `.idea` metadata and comments in `DefaultEngine.ini` for UE5 compatibility." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove platform-specific subsystems and deprecated configurations  &#10;&#10;- Removed `OnlineSubsystemPS4` and `OnlineSubsystemLive` due to deprecation.  &#10;- Cleaned up unused target platforms in `ShooterGame.uproject`.  &#10;- Updated `.idea` metadata and comments in `DefaultEngine.ini` for UE5 compatibility." />
+    <MESSAGE value="Update README.md for comprehensive UE5.7 project details&#10;&#10;- Added detailed porting notes, feature highlights, and build instructions for ShooterGame's transition to UE5.7.&#10;- Documented new Lumen, Nanite, TSR, and VSM rendering technologies.&#10;- Included performance tuning options, known issues, and contribution guidelines.&#10;- Updated `.idea` and `Config/DefaultEditor.ini` for editor profile improvements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md for comprehensive UE5.7 project details&#10;&#10;- Added detailed porting notes, feature highlights, and build instructions for ShooterGame's transition to UE5.7.&#10;- Documented new Lumen, Nanite, TSR, and VSM rendering technologies.&#10;- Included performance tuning options, known issues, and contribution guidelines.&#10;- Updated `.idea` and `Config/DefaultEditor.ini` for editor profile improvements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
