@@ -8,7 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterLeaderboards.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterLeaderboards.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Online/ShooterGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Online/ShooterGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPersistentUser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/Player/ShooterPersistentUser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterIngameMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterIngameMenu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMainMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/UI/Menu/ShooterMainMenu.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://4" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShooterGame/ShooterGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Private/sqlite/sqlite3.inl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Source/Developer/ShaderCompilerCommon/Private/ISAParser/RDNA_Common.h" root0="FORCE_HIGHLIGHTING" />
@@ -121,6 +124,13 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1769032817506" />
+    <option name="spentUsd" value="0.01382275" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="8" />
+  </component>
   <component name="RunManager">
     <configuration name="ShooterGame" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -435,7 +445,7 @@
       <workItem from="1766767217385" duration="58000" />
       <workItem from="1766767786922" duration="11819000" />
       <workItem from="1766783984220" duration="5795000" />
-      <workItem from="1766790050121" duration="1803000" />
+      <workItem from="1766790050121" duration="4265000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -501,7 +511,39 @@
       <option name="project" value="LOCAL" />
       <updated>1766791563574</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactor leaderboard initialization to replace `new` with `Add` for improved clarity and safety">
+      <option name="closed" value="true" />
+      <created>1766791889825</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766791889825</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update replication graph and game instance for UE5.7 compatibility  &#10;&#10;- Added `ANoPawnPlayerController` as `NotRouted` in replication graph.  &#10;- Refined map name check in `ShooterGameInstance` to use short map names via `FPackageName::GetShortName`.  &#10;- Minor adjustments to `.idea` workspace metadata and task settings.">
+      <option name="closed" value="true" />
+      <created>1766792195768</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766792195768</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Refactor bot initialization logic and map name checks in `ShooterGameInstance` and `ShooterGameMode` for improved clarity and consistency">
+      <option name="closed" value="true" />
+      <created>1766792684935</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1766792684935</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Set `MaxBots` default value in `ShooterGameMode` and update default global game mode to `ShooterGame_Menu`.">
+      <option name="closed" value="true" />
+      <created>1766793371991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1766793371991</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -516,7 +558,11 @@
     <MESSAGE value="Update replication graph for UE 5.7 compatibility&#10;&#10;- Replaced `TWeakObjectPtr&lt;UNetConnection&gt;` with raw pointer due to `UNetConnection` no longer being a UObject.&#10;- Adjusted null and validity checks for raw pointers.&#10;- Enhanced player state frequency limiter and logging methods for replication nodes." />
     <MESSAGE value="Refactor delegate usage and input handling for UE5.7 compatibility&#10;&#10;- Updated `FPakPlatformFile` delegates to use accessor methods and renamed delegates for clarity.&#10;- Adjusted `SimulateInputKey` to use `FInputKeyEventArgs` with updated input device parameters.&#10;- Made minor adjustments to `.idea` workspace metadata." />
     <MESSAGE value="Refactor input handling, UI logic, and font initialization for UE5.7 compatibility&#10;&#10;- Updated `FKey` handling to use `GetVirtualKey()` for consistency in input mappings across widgets.&#10;- Removed unnecessary `.ItemHeight` property from list widgets in multiple UI components.&#10;- Switched to `Algo::Sort` for safer and more optimal sorting in demo list.&#10;- Adjusted font macros in `ShooterStyle` to support composite fonts with lazy loading. &#10;- Added missing `LocalPlayer` and other necessary includes across several files to resolve compatibility issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor input handling, UI logic, and font initialization for UE5.7 compatibility&#10;&#10;- Updated `FKey` handling to use `GetVirtualKey()` for consistency in input mappings across widgets.&#10;- Removed unnecessary `.ItemHeight` property from list widgets in multiple UI components.&#10;- Switched to `Algo::Sort` for safer and more optimal sorting in demo list.&#10;- Adjusted font macros in `ShooterStyle` to support composite fonts with lazy loading. &#10;- Added missing `LocalPlayer` and other necessary includes across several files to resolve compatibility issues." />
+    <MESSAGE value="Refactor leaderboard initialization to replace `new` with `Add` for improved clarity and safety" />
+    <MESSAGE value="Update replication graph and game instance for UE5.7 compatibility  &#10;&#10;- Added `ANoPawnPlayerController` as `NotRouted` in replication graph.  &#10;- Refined map name check in `ShooterGameInstance` to use short map names via `FPackageName::GetShortName`.  &#10;- Minor adjustments to `.idea` workspace metadata and task settings." />
+    <MESSAGE value="Refactor bot initialization logic and map name checks in `ShooterGameInstance` and `ShooterGameMode` for improved clarity and consistency" />
+    <MESSAGE value="Set `MaxBots` default value in `ShooterGameMode` and update default global game mode to `ShooterGame_Menu`." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set `MaxBots` default value in `ShooterGameMode` and update default global game mode to `ShooterGame_Menu`." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

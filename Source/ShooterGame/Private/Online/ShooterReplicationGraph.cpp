@@ -198,7 +198,7 @@ void UShooterReplicationGraph::InitGlobalActorClassSettings()
 	AddInfo( AReplicationGraphDebugActor::StaticClass(),			EClassRepNodeMapping::NotRouted);				// Not needed. Replicated special case inside RepGraph
 	AddInfo( AInfo::StaticClass(),									EClassRepNodeMapping::RelevantAllConnections);	// Non spatialized, relevant to all
 	AddInfo( AShooterPickup::StaticClass(),							EClassRepNodeMapping::Spatialize_Static);		// Spatialized and never moves. Routes to GridNode.
-	AddInfo( ANoPawnPlayerController::StaticClass(),				EClassRepNodeMapping::NotRouted);				// UE 5.7+: Not needed in graph.
+	AddInfo( ANoPawnPlayerController::StaticClass(),				EClassRepNodeMapping::NotRouted);				// Not needed in graph.
 
 #if WITH_GAMEPLAY_DEBUGGER
 	AddInfo( AGameplayDebuggerCategoryReplicator::StaticClass(),	EClassRepNodeMapping::NotRouted);				// Replicated via UShooterReplicationGraphNode_AlwaysRelevant_ForConnection
@@ -473,11 +473,14 @@ void UShooterReplicationGraph::RouteRemoveNetworkActorToNodes(const FNewReplicat
 			}
 			else
 			{
-				FActorRepListRefView& RepList = AlwaysRelevantStreamingLevelActors.FindChecked(ActorInfo.StreamingLevelName);
-				if (RepList.RemoveFast(ActorInfo.Actor) == false)
+				FActorRepListRefView* RepListPtr = AlwaysRelevantStreamingLevelActors.Find(ActorInfo.StreamingLevelName);
+				if (RepListPtr)
 				{
-					UE_LOG(LogShooterReplicationGraph, Warning, TEXT("Actor %s was not found in AlwaysRelevantStreamingLevelActors list. LevelName: %s"), *GetActorRepListTypeDebugString(ActorInfo.Actor), *ActorInfo.StreamingLevelName.ToString());
-				}				
+					if (RepListPtr->RemoveFast(ActorInfo.Actor) == false)
+					{
+						UE_LOG(LogShooterReplicationGraph, Warning, TEXT("Actor %s was not found in AlwaysRelevantStreamingLevelActors list. LevelName: %s"), *GetActorRepListTypeDebugString(ActorInfo.Actor), *ActorInfo.StreamingLevelName.ToString());
+					}
+				}
 			}
 			break;
 		}
@@ -572,6 +575,7 @@ void UShooterReplicationGraph::OnGameplayDebuggerOwnerChange(AGameplayDebuggerCa
 void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::ResetGameWorldState()
 {
 	AlwaysRelevantStreamingLevelsNeedingReplication.Empty();
+	LastInitializedPlayerState = nullptr;
 }
 
 void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorListsForConnection(const FConnectionGatherActorListParameters& Params)
@@ -608,9 +612,9 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 				// Always return the player state to the owning player. Simulated proxy player states are handled by UShooterReplicationGraphNode_PlayerStateFrequencyLimiter
 				if (APlayerState* PS = PC->PlayerState)
 				{
-					if (!bInitializedPlayerState)
+					if (LastInitializedPlayerState != PS)
 					{
-						bInitializedPlayerState = true;
+						LastInitializedPlayerState = PS;
 						FConnectionReplicationActorInfo& ConnectionActorInfo = Params.ConnectionManager.ActorInfoMap.FindOrAdd(PS);
 						ConnectionActorInfo.ReplicationPeriodFrame = 1;
 					}
@@ -624,7 +628,6 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 			if (LastData == nullptr)
 			{
 				FShooterAlwaysRelevantActorInfo NewActorInfo;
-				// FIXED FOR UE 5.7: UNetConnection is no longer a UObject, use raw pointer
 				NewActorInfo.Connection = CurViewer.Connection.Get();
 				LastData = &(PastRelevantActors[PastRelevantActors.Add(NewActorInfo)]);
 			}
@@ -633,7 +636,6 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 
 			if (AShooterCharacter* Pawn = Cast<AShooterCharacter>(PC->GetPawn()))
 			{
-				// UE5: TWeakObjectPtr requires different access pattern
 				AActor* LastViewerPtr = LastData->LastViewer.Get();
 				ResetActorCullDistance(Pawn, LastViewerPtr);
 				LastData->LastViewer = LastViewerPtr;
@@ -656,7 +658,6 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 
 			if (AShooterCharacter* ViewTargetPawn = Cast<AShooterCharacter>(CurViewer.ViewTarget))
 			{
-				// UE5: TWeakObjectPtr requires different access pattern
 				AActor* LastViewTargetPtr = LastData->LastViewTarget.Get();
 				ResetActorCullDistance(ViewTargetPawn, LastViewTargetPtr);
 				LastData->LastViewTarget = LastViewTargetPtr;
@@ -664,9 +665,8 @@ void UShooterReplicationGraphNode_AlwaysRelevant_ForConnection::GatherActorLists
 		}
 	}
 
-	// FIXED FOR UE 5.7: Changed from IsValid() to nullptr check since Connection is now a raw pointer
 	PastRelevantActors.RemoveAll([&](FShooterAlwaysRelevantActorInfo& RelActorInfo) {
-		return RelActorInfo.Connection == nullptr || !RelActorInfo.Connection->IsValidLowLevel();
+		return !RelActorInfo.Connection.IsValid();
 	});
 
 	Params.OutGatheredReplicationLists.AddReplicationActorList(ReplicationActorList);

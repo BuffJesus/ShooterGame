@@ -14,10 +14,9 @@ class AGameplayDebuggerCategoryReplicator;
 DECLARE_LOG_CATEGORY_EXTERN( LogShooterReplicationGraph, Display, All );
 
 // Custom struct to replace deprecated FAlwaysRelevantActorInfo
-// FIXED FOR UE 5.7: UNetConnection is no longer a UObject, so we use raw pointer instead of TWeakObjectPtr
 struct FShooterAlwaysRelevantActorInfo
 {
-	UNetConnection* Connection;  // Changed from TWeakObjectPtr<UNetConnection>
+	TWeakObjectPtr<UNetConnection> Connection;
 	TWeakObjectPtr<AActor> LastViewer;
 	TWeakObjectPtr<AActor> LastViewTarget;
 
@@ -28,7 +27,7 @@ struct FShooterAlwaysRelevantActorInfo
 
 	bool operator==(const UNetConnection* Other) const
 	{
-		return Connection == Other;
+		return Connection.Get() == Other;
 	}
 };
 
@@ -126,7 +125,7 @@ private:
 
 	TArray<FShooterAlwaysRelevantActorInfo> PastRelevantActors;
 
-	bool bInitializedPlayerState = false;
+	TWeakObjectPtr<APlayerState> LastInitializedPlayerState;
 };
 
 
