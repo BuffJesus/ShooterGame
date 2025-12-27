@@ -7,34 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/CookerSync_Game.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Deploy.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/RunShooterTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/ShooterGame.Automation.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/ShooterGame.Automation.csproj.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.BasicDedicatedServerTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.BootTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.DedicatedServerTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.ListenServerQuickMatchTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.ListenServerTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/Tests/ShooterTest.TestConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/obj/Development/ShooterGame.Automation.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/obj/Development/ShooterGame.Automation.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/obj/Development/ShooterGame.Automation.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Scripts/obj/Development/ShooterGame.Automation.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/ShooterGameBuild.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/ShooterGameServer_MakeBuild.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/ShooterGameServer_PakList.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/ShooterGame_MakeBuild.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/ShooterGame_PakList.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/hashes.sha" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/hashesnull.sha" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShooterGame/Private/ShooterGameInstance.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,10 +121,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1769032817506" />
-    <option name="spentUsd" value="0.026381249" />
+    <option name="spentUsd" value="0.031323798" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="6" />
+    <option name="suspendCountdown" value="5" />
   </component>
   <component name="RunManager">
     <configuration name="ShooterGame" type="Uproject" factoryName="rider.uproject">
@@ -469,7 +442,7 @@
       <workItem from="1766783984220" duration="5795000" />
       <workItem from="1766790050121" duration="5795000" />
       <workItem from="1766798240984" duration="132000" />
-      <workItem from="1766803858369" duration="1916000" />
+      <workItem from="1766803858369" duration="2599000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -583,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766797132646</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Remove deprecated automation scripts, build configurations, and related files for ShooterGame">
+      <option name="closed" value="true" />
+      <created>1766807660266</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1766807660266</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -604,7 +585,8 @@
     <MESSAGE value="Set `MaxBots` default value in `ShooterGameMode` and update default global game mode to `ShooterGame_Menu`." />
     <MESSAGE value="Clamp bot count to valid range and refine quit game logic for improved stability and consistency" />
     <MESSAGE value="Update replication graph for improved UE5.7 compatibility&#10;&#10;- Refined handling of `AlwaysRelevantStreamingLevelActors` with added null checks for safer operations.&#10;- Replaced raw pointer use with `TWeakObjectPtr` for `UNetConnection` in `FShooterAlwaysRelevantActorInfo`.&#10;- Enhanced player state initialization logic for replication nodes.&#10;- Removed outdated UE5.7-specific comments and fixed metadata inconsistencies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update replication graph for improved UE5.7 compatibility&#10;&#10;- Refined handling of `AlwaysRelevantStreamingLevelActors` with added null checks for safer operations.&#10;- Replaced raw pointer use with `TWeakObjectPtr` for `UNetConnection` in `FShooterAlwaysRelevantActorInfo`.&#10;- Enhanced player state initialization logic for replication nodes.&#10;- Removed outdated UE5.7-specific comments and fixed metadata inconsistencies." />
+    <MESSAGE value="Remove deprecated automation scripts, build configurations, and related files for ShooterGame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove deprecated automation scripts, build configurations, and related files for ShooterGame" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
