@@ -10,7 +10,251 @@
     <list default="true" id="a8441380-9b85-447b-8107-945a749c6b6b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShooterGame.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Doors_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Doors_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Holo_City.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Holo_City.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Holo_l1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Holo_l1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Cloud_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Cloud_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Enviro_assets_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Enviro_assets_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_ConcreteWallPlate_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_ConcreteWallPlate_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_04.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_04_Brighter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_04_Brighter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_05.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FFA_Wall_05.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FPS_Planet.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FPS_Planet.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_FPS_Vista_Mountain.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_FPS_Vista_Mountain.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Floor_Lights.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Floor_Lights.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Forest_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Forest_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Forest_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Forest_03.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_City.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_City.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_Walls.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_Walls.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_Windows.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Fps_Vista_Windows.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Glass_Railing_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Glass_Railing_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Grass2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Grass2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_GrassLVL_Wall_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_GrassLVL_Wall_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Laser.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Laser.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_MASTER_Sky_Material_FFA.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_MASTER_Sky_Material_FFA.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Park.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Park.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Park4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Park4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Park_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Park_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_PublicPhone_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_PublicPhone_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_PublicPhone_holo_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_PublicPhone_holo_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Vista_Grass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_Vista_Grass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_lvl_Bench_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_lvl_Bench_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_skydome_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_skydome_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_water_Lake_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/M_water_Lake_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_gray.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_gray.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_gray.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_gray.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_hex_gray.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_hex_gray.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_hex_gray_em.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_hex_gray_em.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_lines_gray2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_lines_gray2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_masked.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Metal_tiled_masked.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive22.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive22.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Simple_emmisive3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Unreal_Holo_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_2_trans.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_2_trans.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_2_trans_22.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_2_trans_22.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_2_tile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_2_tile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_holo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_holo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_tiled.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/Windows_glass_trans_tiled.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_1_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_1_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Materials/unreal_holo_4_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_DamThreshold_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_DamThreshold_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/City_Holographic_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/City_Holographic_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_Arc_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_Arc_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_Arc_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_Arc_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_WallGrass_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_WallGrass_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_WallGrass_05.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/MainHall_WallGrass_05.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01_midle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01_midle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01_midle_a.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01_midle_a.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01a.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01a.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01b.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01b.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01c.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01c.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01d.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01d.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01e.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01e.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01f.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/Railings_01f.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/SM_Grass_plane.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/SM_Grass_plane.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_1_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_1_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_2_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_2_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/back_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_m.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_m.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_mb.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_mb.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_r.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_r.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_r2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bal_r2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_10.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_11.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_11.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_6.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_7.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_9.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/barier_9.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p4_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bottom_p4_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_ele_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_ele_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_ele_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_ele_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim2_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim2_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim3_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/bridge_trim3_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/doors_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/doors_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_floor_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_floor_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_2_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_2_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_3_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_stairs_3_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_glass_hex.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_glass_hex.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_railing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_1_railing.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_2_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_2_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_3_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_3_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_center.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_center.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_center_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/entrance_wall_center_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/filler_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/filler_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5_Glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5_Glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5_det.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/floor_5_det.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front_det_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front_det_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front_masked.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_front_masked.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_a.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_a.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_b.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_b.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_c.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_inside_c.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/glass_left.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_main.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_main.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_ring.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_ring.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_tunnel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/hi_bottom_tunnel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holes_cover_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_l5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_ll3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_ll3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_ll4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_ll4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1_ele_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1_ele_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1_ele_1_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_1_ele_1_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/holo_proj_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_bottom_wall_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_bottom_wall_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_ceiling.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_ceiling.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_ceiling_trim.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_ceiling_trim.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_column_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_column_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_stairs_railings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_wall_stairs_railings.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_walls_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/interior_walls_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Bench_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Bench_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Lights_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Lights_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_PublicPhone_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_PublicPhone_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_PublicPhone_holo_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_PublicPhone_holo_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Trshcan_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_Trshcan_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_c_inside.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_c_inside.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside_Pillar_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside_Pillar_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside_b.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_inside_b.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/lvl_left.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_front.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_front.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_left.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_left_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/main_left_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/near_entrance_wall.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/near_entrance_wall.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/near_entrance_wall_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/near_entrance_wall_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_1_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_1_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_floor_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_floor_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_floor_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_floor_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_interior.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_interior.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_stairs_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/spawn_point_stairs_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_6.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_6.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/stairs_7.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/unreal_holo_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/upper_p1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/upper_p1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/upper_p1_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/upper_p1_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left_2_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wall_left_2_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_1_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_1_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_2_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_2_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_4_glass.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/City_TDM/New_ver/wing_wall_4_glass.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/CloudPlane_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/CloudPlane_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/FFA_BlockVista_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/FFA_BlockVista_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Fps_Vista_GP_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Fps_Vista_GP_03.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Sky_Clouds.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Sky_Clouds.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Vista_Plane.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/SM_Vista_Plane.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/City_BasePlane_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/City_BasePlane_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_FPS_Vista_Mountain.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_FPS_Vista_Mountain.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_03.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_Building_04.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_GP_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_GP_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_GP_02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Fps_Vista_GP_02.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_7.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_7.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_8.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_8.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_9.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_City_Building_9.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_Vista_coast_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_Vista_coast_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_Vista_coast_triangle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Shooter_Vista_coast_triangle.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_SkyDome.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_SkyDome.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_3.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Environment/Meshes/Vista_Meshes/SM_Vista_Trees_5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Audio.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Audio.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Audio_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Audio_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Collisions_Temp.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Collisions_Temp.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Collisions_Temp_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Collisions_Temp_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Gameplay.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Gameplay.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Gameplay_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Gameplay_BuiltData.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Lights.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Lights.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Lights_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Lights_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Vista.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Vista.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Highrise_Vista_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Highrise_Vista_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Sanctuary.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/Sanctuary.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/Sanctuary_BuiltData.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/ShooterEntry.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/ShooterEntry.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/ShooterEntry_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/ShooterEntry_BuiltData.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +270,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -40,7 +285,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://3" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://9" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShooterGame/ShooterGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Plugins/Runtime/Database/SQLiteCore/Source/SQLiteCore/Private/sqlite/sqlite3.inl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Programs/Epic Games/UE_5.7/Engine/Source/Developer/ShaderCompilerCommon/Private/ISAParser/RDNA_Common.h" root0="FORCE_HIGHLIGHTING" />
@@ -125,10 +370,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1769032817506" />
-    <option name="spentUsd" value="0.045699798" />
+    <option name="spentUsd" value="0.1365088" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="4" />
+    <option name="suspendCountdown" value="0" />
   </component>
   <component name="RunManager">
     <configuration name="ShooterGame" type="Uproject" factoryName="rider.uproject">
@@ -446,7 +691,7 @@
       <workItem from="1766783984220" duration="5795000" />
       <workItem from="1766790050121" duration="5795000" />
       <workItem from="1766798240984" duration="132000" />
-      <workItem from="1766803858369" duration="4309000" />
+      <workItem from="1766803858369" duration="7529000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup for ShooterGame automation and build system&#10;&#10;- Introduced `.vsconfig` with required Visual Studio components.&#10;- Added new scripts and batch files for automated builds, packaging, and deployment.&#10;- Included build and project configuration files for Unreal Engine setup.&#10;- Implemented Gauntlet-based test harness with initial test cases.">
       <option name="closed" value="true" />
@@ -584,7 +829,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766809449180</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update `.idea`, `Config/DefaultEngine.ini`, and `Highrise_Lights.umap` for project configuration and compatibility improvements&#10;&#10;- Enabled mesh distance fields and Nanite fallback meshes in `DefaultEngine.ini`.&#10;- Updated audio and rendering settings for optimized UE5.7 performance.&#10;- Adjusted `.idea` workspace metadata and tasks for minor project refinements.&#10;- Modified `Highrise_Lights.umap` for map-specific updates.">
+      <option name="closed" value="true" />
+      <created>1766810289846</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1766810289846</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -608,7 +861,8 @@
     <MESSAGE value="Remove deprecated automation scripts, build configurations, and related files for ShooterGame" />
     <MESSAGE value="Remove platform-specific subsystems and deprecated configurations  &#10;&#10;- Removed `OnlineSubsystemPS4` and `OnlineSubsystemLive` due to deprecation.  &#10;- Cleaned up unused target platforms in `ShooterGame.uproject`.  &#10;- Updated `.idea` metadata and comments in `DefaultEngine.ini` for UE5 compatibility." />
     <MESSAGE value="Update README.md for comprehensive UE5.7 project details&#10;&#10;- Added detailed porting notes, feature highlights, and build instructions for ShooterGame's transition to UE5.7.&#10;- Documented new Lumen, Nanite, TSR, and VSM rendering technologies.&#10;- Included performance tuning options, known issues, and contribution guidelines.&#10;- Updated `.idea` and `Config/DefaultEditor.ini` for editor profile improvements." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md for comprehensive UE5.7 project details&#10;&#10;- Added detailed porting notes, feature highlights, and build instructions for ShooterGame's transition to UE5.7.&#10;- Documented new Lumen, Nanite, TSR, and VSM rendering technologies.&#10;- Included performance tuning options, known issues, and contribution guidelines.&#10;- Updated `.idea` and `Config/DefaultEditor.ini` for editor profile improvements." />
+    <MESSAGE value="Update `.idea`, `Config/DefaultEngine.ini`, and `Highrise_Lights.umap` for project configuration and compatibility improvements&#10;&#10;- Enabled mesh distance fields and Nanite fallback meshes in `DefaultEngine.ini`.&#10;- Updated audio and rendering settings for optimized UE5.7 performance.&#10;- Adjusted `.idea` workspace metadata and tasks for minor project refinements.&#10;- Modified `Highrise_Lights.umap` for map-specific updates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update `.idea`, `Config/DefaultEngine.ini`, and `Highrise_Lights.umap` for project configuration and compatibility improvements&#10;&#10;- Enabled mesh distance fields and Nanite fallback meshes in `DefaultEngine.ini`.&#10;- Updated audio and rendering settings for optimized UE5.7 performance.&#10;- Adjusted `.idea` workspace metadata and tasks for minor project refinements.&#10;- Modified `Highrise_Lights.umap` for map-specific updates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
