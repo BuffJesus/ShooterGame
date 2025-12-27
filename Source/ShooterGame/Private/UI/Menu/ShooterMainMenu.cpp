@@ -18,6 +18,8 @@
 #include "Player/ShooterPersistentUser.h"
 #include "Player/ShooterLocalPlayer.h"
 #include "OnlineSubsystemUtils.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "GenericPlatform/GenericPlatformMisc.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"
 
@@ -126,9 +128,9 @@ void FShooterMainMenu::Construct(TWeakObjectPtr<UShooterGameInstance> _GameInsta
 
 	if(GetPersistentUser())
 	{
-		BotsCountOpt = GetPersistentUser()->GetBotsCount();
+		BotsCountOpt = FMath::Clamp(GetPersistentUser()->GetBotsCount(), 0, MAX_BOT_COUNT);
 		bIsRecordingDemo = GetPersistentUser()->IsRecordingDemos();
-	}		
+	}
 
 	// number entries 0 up to MAX_BOX_COUNT
 	TArray<FText> BotsCountList;
@@ -1080,7 +1082,7 @@ void FShooterMainMenu::OnMenuGoBack(MenuPtr Menu)
 
 void FShooterMainMenu::BotCountOptionChanged(TSharedPtr<FShooterMenuItem> MenuItem, int32 MultiOptionIndex)
 {
-	BotsCountOpt = MultiOptionIndex;
+	BotsCountOpt = FMath::Clamp(MultiOptionIndex, 0, MAX_BOT_COUNT);
 
 	if(GetPersistentUser())
 	{
@@ -1135,12 +1137,6 @@ void FShooterMainMenu::RecordDemoChanged(TSharedPtr<FShooterMenuItem> MenuItem, 
 
 void FShooterMainMenu::OnUIHostFreeForAll()
 {
-#if WITH_EDITOR
-	if (GIsEditor == true)
-	{
-		return;
-	}
-#endif
 	if (!IsMapReady())
 	{
 		return;
@@ -1168,12 +1164,6 @@ void FShooterMainMenu::OnUIHostFreeForAll()
 
 void FShooterMainMenu::OnUIHostTeamDeathMatch()
 {
-#if WITH_EDITOR
-	if (GIsEditor == true)
-	{
-		return;
-	}
-#endif
 	if (!IsMapReady())
 	{
 		return;
@@ -1418,12 +1408,23 @@ void FShooterMainMenu::Quit()
 {
 	if (ensure(GameInstance.IsValid()))
 	{
+		UWorld* const World = GetTickableGameObjectWorld();
+		if (World)
+		{
+			APlayerController* const PlayerController = GetPlayerOwner() ? GetPlayerOwner()->PlayerController : nullptr;
+			UKismetSystemLibrary::QuitGame(World, PlayerController, EQuitPreference::Quit, false);
+			return;
+		}
+
 		UGameViewportClient* const Viewport = GameInstance->GetGameViewportClient();
-		if (ensure(Viewport)) 
+		if (Viewport)
 		{
 			Viewport->ConsoleCommand("quit");
+			return;
 		}
 	}
+
+	FGenericPlatformMisc::RequestExit(false);
 }
 
 void FShooterMainMenu::LockAndHideMenu()

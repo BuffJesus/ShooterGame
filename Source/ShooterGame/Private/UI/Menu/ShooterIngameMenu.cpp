@@ -11,6 +11,8 @@
 #include "OnlineSubsystemUtils.h"
 #include "Engine/GameViewportClient.h"
 #include "Engine/LocalPlayer.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "GenericPlatform/GenericPlatformMisc.h"
 
 #define LOCTEXT_NAMESPACE "ShooterGame.HUD.Menu"
 
@@ -304,10 +306,19 @@ void FShooterIngameMenu::OnUIQuit()
 void FShooterIngameMenu::Quit()
 {
 	APlayerController* const PCOwner = PlayerOwner ? PlayerOwner->PlayerController : nullptr;
+	UWorld* const World = PlayerOwner ? PlayerOwner->GetWorld() : nullptr;
+	if (World)
+	{
+		UKismetSystemLibrary::QuitGame(World, PCOwner, EQuitPreference::Quit, false);
+		return;
+	}
 	if (PCOwner)
 	{
 		PCOwner->ConsoleCommand("quit");
+		return;
 	}
+
+	FGenericPlatformMisc::RequestExit(false);
 }
 
 void FShooterIngameMenu::OnShowInviteUI()

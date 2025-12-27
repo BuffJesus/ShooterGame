@@ -240,9 +240,10 @@ void UShooterPersistentUser::SetGamma(float InGamma)
 
 void UShooterPersistentUser::SetBotsCount(int32 InCount)
 {
-	bIsDirty |= BotsCount != InCount;
+	const int32 ClampedCount = FMath::Max(0, InCount);
+	bIsDirty |= BotsCount != ClampedCount;
 
-	BotsCount = InCount;
+	BotsCount = ClampedCount;
 }
 
 void UShooterPersistentUser::SetIsRecordingDemos(const bool InbIsRecordingDemos)

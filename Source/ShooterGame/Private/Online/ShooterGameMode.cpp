@@ -57,8 +57,8 @@ FString AShooterGameMode::GetBotsCountOptionName()
 
 void AShooterGameMode::InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage)
 {
-	const int32 BotsCountOptionValue = UGameplayStatics::GetIntOption(Options, GetBotsCountOptionName(), MaxBots);
-	SetAllowBots(BotsCountOptionValue > 0 ? true : false, BotsCountOptionValue);	
+	const int32 BotsCountOptionValue = FMath::Max(0, UGameplayStatics::GetIntOption(Options, GetBotsCountOptionName(), MaxBots));
+	SetAllowBots(BotsCountOptionValue > 0, BotsCountOptionValue);
 	Super::InitGame(MapName, Options, ErrorMessage);
 
 	const UGameInstance* GameInstance = GetGameInstance();
@@ -70,8 +70,8 @@ void AShooterGameMode::InitGame(const FString& MapName, const FString& Options, 
 
 void AShooterGameMode::SetAllowBots(bool bInAllowBots, int32 InMaxBots)
 {
-	bAllowBots = bInAllowBots;
-	MaxBots = InMaxBots;
+	MaxBots = FMath::Max(0, InMaxBots);
+	bAllowBots = bInAllowBots && MaxBots > 0;
 }
 
 /** Returns game session class to use */
