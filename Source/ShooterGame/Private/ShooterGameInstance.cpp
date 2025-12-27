@@ -328,6 +328,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 void UShooterGameInstance::StartGameInstance()
 {
+	UE_LOG(LogOnline, Warning, TEXT("=== StartGameInstance called ==="));
+	UE_LOG(LogOnline, Warning, TEXT("MainMenuMap: %s"), *MainMenuMap);
 // UE5 Fix: Use defined() check for platform macro
 #if !defined(PLATFORM_PS4) || PLATFORM_PS4 == 0
 	TCHAR Parm[4096] = TEXT("");
@@ -380,6 +382,7 @@ void UShooterGameInstance::StartGameInstance()
 		}
 	}
 #endif
+	UE_LOG(LogOnline, Warning, TEXT("=== Calling GotoInitialState, going to state: %s ==="), *GetInitialState().ToString());
 	UShooterGameUserSettings::InitNVIDIAReflex();
 	GotoInitialState();
 }
